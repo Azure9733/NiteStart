@@ -29,6 +29,16 @@ echo 0x0104 > idProduct  # Multifunction Composite Gadget
 echo 0x0100 > bcdDevice  # Device version
 echo 0x0200 > bcdUSB     # USB 2.0 specification
 ```
+With this i used the script given in the repository and out the following output  
+![image](https://github.com/user-attachments/assets/fb0a4379-d829-4863-ba97-6f905dbff65d)  
+`Could not find UDC Device`  
+This was the first sign.  
+using ``zcat /proc/config.gz | grep CONFIG_USB_GADGET``  
+resulted in no file or repository found
 
+this indicated lack of hardware support
+to confirm
+``cat /boot/config-$(uname -r) | grep USB_GADGET``  
 ![image](https://github.com/user-attachments/assets/4d4a37e7-e354-4f78-8d10-3f22b60abf9a)  
-This is where the hardware limitation was discovered.
+This is where the hardware limitation was discovered.  
+For regular laptop-to-laptop connections? Unfortunately, this kills the original vision of NiteStart.
