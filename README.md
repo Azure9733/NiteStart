@@ -1,5 +1,7 @@
 # NiteStart
 **NOTE: THIS PROJECT IS REDUNDANT UNTIL USB GADGET SUPPORT IS ENABLED ON KERNALS BY DEFAULT or until a better technology comes up**  
+
+I have open sourced this repository in hopes that the community finds a better path than what I found.  
 There is a reason why laptop to laptop USB connection was unheard of and why we have never seen anyone even try to do it
 Most laptop USB controllers are designed to act as Hosts only not to be controlled.  
 
