@@ -1,5 +1,5 @@
 # NiteStart
-
+**NOTE: THIS PROJECT IS REDUNDANT UNTIL USB GADGET SUPPORT IS ENABLED ON KERNALS BY DEFAULT or until a better technology comes up**  
 There is a reason why laptop to laptop USB connection was unheard of and why we have never seen anyone even try to do it
 Most laptop USB controllers are designed to act as Hosts only not to be controlled.  
 
@@ -12,7 +12,7 @@ We either need a custom compiled kernal with USB Gadget support (kinda kills the
 Or  
 Different hardware like a Raspberry Pi or Android Device that supports OTG and can be rooted  
 
-
+## Discovery of Hardware Limitation
 ```
 # Initial setup commands
 sudo modprobe libcomposite
