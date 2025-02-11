@@ -12,3 +12,8 @@ echo 0x0104 > idProduct  # Multifunction Composite Gadget
 echo 0x0100 > bcdDevice  # Device version
 echo 0x0200 > bcdUSB     # USB 2.0 specification
 ```
+```
+# Run these commands on your Linux laptop
+ls /sys/kernel/config/usb_gadget
+# If this shows a directory, USB Gadget is supported
+```
